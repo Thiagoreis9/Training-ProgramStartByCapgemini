@@ -1,0 +1,18 @@
+import { Component, OnInit } from '@angular/core';
+import { Celular } from '../types/Celular';
+
+@Component({
+  selector: 'app-renderizando-listas',
+  templateUrl: './renderizando-listas.component.html',
+  styleUrls: ['./renderizando-listas.component.css']
+})
+export class RenderizandoListasComponent {
+
+  celulares: Celular[] = [
+    {id: 1, nome: "Celular XL", descricao: "Um celular grande", esgotado: false},
+    {id: 2, nome: "Celular TOP", esgotado: true},
+    {id: 3, nome: "Celular Normal", esgotado: false},
+    {id: 4, nome: "Celular Mini", descricao: "Um celular pequeno", esgotado: true}
+  ]
+
+}
